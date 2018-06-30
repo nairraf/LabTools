@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PopulateAD.CLI", "PopulateA
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Farrworks.PopulateAD.Shared", "Farrworks.PopulateAD.Shared\Farrworks.PopulateAD.Shared.csproj", "{32AA14E9-708D-4C80-96B5-4088D1FF608D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Farrworks.PopulateAD.Names", "Farrworks.PopulateAD.Names\Farrworks.PopulateAD.Names.csproj", "{11EA3B8A-5FF1-4F66-82DF-A9F75BE974E8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{32AA14E9-708D-4C80-96B5-4088D1FF608D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{32AA14E9-708D-4C80-96B5-4088D1FF608D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{32AA14E9-708D-4C80-96B5-4088D1FF608D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{11EA3B8A-5FF1-4F66-82DF-A9F75BE974E8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{11EA3B8A-5FF1-4F66-82DF-A9F75BE974E8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{11EA3B8A-5FF1-4F66-82DF-A9F75BE974E8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{11EA3B8A-5FF1-4F66-82DF-A9F75BE974E8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

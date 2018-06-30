@@ -49,6 +49,10 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Farrworks.PopulateAD.Names\Farrworks.PopulateAD.Names.csproj">
+      <Project>{11ea3b8a-5ff1-4f66-82df-a9f75be974e8}</Project>
+      <Name>Farrworks.PopulateAD.Names</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Farrworks.PopulateAD.Shared\Farrworks.PopulateAD.Shared.csproj">
       <Project>{32aa14e9-708d-4c80-96b5-4088d1ff608d}</Project>
       <Name>Farrworks.PopulateAD.Shared</Name>
