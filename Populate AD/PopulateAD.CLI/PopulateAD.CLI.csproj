@@ -8,9 +8,10 @@
     <OutputType>Exe</OutputType>
     <RootNamespace>PopulateAD_CLI</RootNamespace>
     <AssemblyName>PopulateAD_CLI</AssemblyName>
-    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -47,16 +48,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\Farrworks.PopulateAD.Names\Farrworks.PopulateAD.Names.csproj">
-      <Project>{11ea3b8a-5ff1-4f66-82df-a9f75be974e8}</Project>
-      <Name>Farrworks.PopulateAD.Names</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Farrworks.PopulateAD.Shared\Farrworks.PopulateAD.Shared.csproj">
-      <Project>{32aa14e9-708d-4c80-96b5-4088d1ff608d}</Project>
-      <Name>Farrworks.PopulateAD.Shared</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
