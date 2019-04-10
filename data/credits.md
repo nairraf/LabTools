@@ -17,7 +17,7 @@ There are tables for first and last names, as well as locations around earch org
 
 ## First/Last Name Credits
 
-The below resources were used for first/last names data files
+The below resources were used for first/last names data
 
 * census.gov
 * ssa.gov
