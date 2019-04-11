@@ -13,7 +13,7 @@ namespace DataConfigFileTests
         {
             public Company Company { get; set; }
             public Dictionary<string, Dictionary<string, Locations>> Locations { get; set;}
-            public Dictionary<string, Dictionary<string, OrgTop>> OrgTop { get; set; }
+            //public Dictionary<string, Dictionary<string, OrgTop>> OrgTop { get; set; }
         }
 
         public class Company
@@ -42,14 +42,13 @@ namespace DataConfigFileTests
 
         static void Main(string[] args)
         {
-            //var data = Toml.ReadFile("OrgChart.toml").ToDictionary();
-            //var confCompany = (Dictionary<string, object>)data["Company"];
-            //var confLocation = (Dictionary<string, object>)data["Locations"];
-            //var confOrg = (Dictionary<string, object>)data["OrgTop"];
-
-            var data = Toml.ReadFile<Configuration>("OrgChart.toml");
-
-            Console.WriteLine("Company Name: " + data.Company.Name);
+            var data = Toml.ReadFile("OrgChart.toml").ToDictionary();
+            var confCompany = (Dictionary<string, object>)data["Company"];
+            var confLocation = data["Locations"];
+            var org = data["OrgTop"];
+ 
+            Console.WriteLine("Company Name: {0})", confCompany["Name"]);
+            //Console.WriteLine("Company Name: " + ;
 
             Console.ReadLine();
         }
