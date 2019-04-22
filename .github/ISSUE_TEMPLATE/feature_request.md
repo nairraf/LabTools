@@ -7,13 +7,14 @@ assignees: ''
 
 ---
 
-## Describe the ideal solution or feature request
+## Describe the new feature request
 
-A clear and concise description of what the customer wants to happen.
+A clear and concise description of what you would like to add
 
-## How does this tie into our current product?
+## Descibe the type of enhancement
 
-Describe whether this request is related to an existing workflow, feature, or otherwise something in the product today. Or, does this open us up to new markets and innovative ideas?
+Is this an enhancement to a current feature, or is this something entirely new?
+If it's related to an existing feature, which feature is this related to?
 
 ## Additional Details
 
