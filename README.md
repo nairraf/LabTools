@@ -6,8 +6,8 @@ At present all work is being done in feture branches or in development/test bran
 
 Here is a list of features that is planned so far:
 
-[ ] Auto Create usernames from a dataset of many thousands of first and last names
-[ ] Create LDAP structure for any desired Organization Structure
-[ ] Create LDAP accounts according to a user definable Organizational Structure
-[ ] Tools to create databases for application development (web services etc.)
-  [ ] Product Tables
+- [ ] Auto Create usernames from a dataset of many thousands of first and last names
+- [ ] Create LDAP structure for any desired Organization Structure
+- [ ] Create LDAP accounts according to a user definable Organizational Structure
+- [ ] Tools to create databases for application development (web services etc.)
+  - [ ] Product Tables
