@@ -1,0 +1,23 @@
+﻿companyName: Lab Corp Unlimited
+
+locations:
+  - name: Corporate
+    rContinent: NA
+    rPopulation: +1000000
+  - name: London
+    country: United Kingdom
+    city: London
+
+org:
+  - title: President
+  - title: Chief Executive Officer
+    department: Office Of The President
+    location: Corporate
+    employees:
+      - title: Executive Assistant to the Office Of The President
+        location: Corporate
+        numPeople: 3
+        department: Office Of The President
+        employees:
+          - title: Assistant to the Assistant
+          - title: Fish Feeder

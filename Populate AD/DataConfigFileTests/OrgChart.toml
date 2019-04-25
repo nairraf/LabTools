@@ -1,0 +1,92 @@
+﻿[Company]
+Name = "Another ficticious Corp"
+
+
+######## Locations array
+# Name:		the name you want to refer to this office as (required)
+# Radom selection options:
+#	rContinet = one of: EUR, AS, NA, SA, OC, AF			limits the random selection to a specific continent
+#	rCounty = "Name"									limit the selection to a specific country (see country name list for accepted values)
+#	rPopulation = "100000-3000000"						limits the city selection to a population range (100K people to 3 Million people in this example)
+#	rPopulation = "-100000"								limits the city selection to a population less than 100K people
+#	rPopulation = "+100000"								limits the city selection to a population greater than 100K people
+#	rTimezone = "Timezone"								limits the selection to a specific timzone (see timezone list for accepted values)
+#
+# You can also specify a location without using the random routines:
+#	Country = "Country Name, City Name"					this can be set to anything you want - no lookups are performed
+#	City = "City Name"									this can be set to anything you want - no lookups are performed
+#
+# if just "Name" is specified, then a location somewhere in the world is chosen at random for that location
+########
+
+[[Locations]]
+Name = "Corporate"
+rContinent = "NA"
+rPopulation = "+1000000"
+
+[[Locations]]
+Name = "London"
+Country = "United Kingdom"
+City = "London"
+
+######## Organization Structure Array
+#
+# this is a hierarchal array of tables and can by almost any corporate structure that is wanted
+# Manager are autocomputed - the parent element is considered the manager
+#
+# the default mimics a multi-national company which will auto create hundreds of users in multiple locations
+#
+# Department = "Some Name"								The name of the department the individual(s) belong to (required)
+# Title = "Some Title"									The Job Title that the individual(s) belong to (required)
+# NumPeople = 1											The number of people that will be auto created for this department/job title. 1 is the default
+# Name = "Some Name"									If you want to hardcode a specific name you can use this, otherwise a random name is chosen
+# Location =											should exactly match one of the "[[Locations]] Name" specified above (required)
+########
+
+[[OrgTop]]
+Department = "Office of the President"
+Title = "Cheif Executive Officer"
+Location = "Corporate"
+
+	[[OrgTop.Assistants]]
+	  Department = "Office of the President"
+	  Title = "Executive Assistant to Office of the President"
+	  Location = "Corporate"
+	  NumPeople = 3
+
+	[[OrgTop.CFO]]
+	  Department = "Office of the President"
+	  Title = "Cheif Financial Officer"
+	  Location = "Corporate"
+
+			[[OrgTop.CFO.Assistant]]
+			  Department = "Finance"
+			  Title = "Executive Assistant to the CFO"
+			  Location = "Corporate"
+		
+			[[OrgTop.CFO.Controller]]
+			  Department = "Finance"
+			  Title = "Corporate Controller"
+			  Location = "Corporate"
+
+					[[OrgTop.CFO.Controller.Regional]]
+					  Department = "Finance"
+					  Title = "Regional Controller"
+					  Location = "London"
+
+			[[OrgTop.CFO.Purchasing]]
+			  Department = "Finance - Purchasing and Insurance"
+			  Title = "Manager of Purchasing and Insurance"
+			  Location = "Corporate"
+			
+					[[OrgTop.CFO.Purchasing.PurchasingClerk]]
+					  Department = "Finance - Purchasing"
+					  Title = "Purchasing Clerk"
+					  Location = "Corporate"
+					  NumPeople = 2
+
+					[[OrgTop.CFO.Purchasing.InsuranceClerk]]
+					  Department = "Finance - Insurance"
+					  Title = "Insurance Clerk"
+					  Location = "Corporate"
+					  NumPeople = 2
